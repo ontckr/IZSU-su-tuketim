@@ -27,16 +27,6 @@ npm run dev
 - Tailwind CSS
 - PapaParse
 
-## 📦 GitHub Pages Deploy
-
-Proje otomatik olarak GitHub Pages'e deploy edilir. Her `main` branch'e push yapıldığında GitHub Actions workflow'u çalışır ve uygulamayı build eder.
-
-Manuel deploy için:
-```bash
-npm run build
-```
-
-Build çıktısı `dist` klasöründe oluşur.
 
 ---
 
