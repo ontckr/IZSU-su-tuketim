@@ -22,7 +22,8 @@ function App() {
     const loadData = async () => {
       try {
         setLoading(true);
-        const parsedData = await parseCSV('/izsu-yillik-ilce-mahalle-su-tuketimi.csv');
+        const baseUrl = import.meta.env.BASE_URL;
+        const parsedData = await parseCSV(`${baseUrl}izsu-yillik-ilce-mahalle-su-tuketimi.csv`);
         setData(parsedData);
       } catch (error) {
         console.error('Veri yükleme hatası:', error);
